@@ -1,0 +1,23 @@
+.title {
+    color: #dcd5d5;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz48 {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+}
+
+.subtitle {
+    color: #dcd5d5;
+    font-size: 18px;
+    line-height: 24px;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

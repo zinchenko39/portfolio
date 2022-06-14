@@ -1,0 +1,32 @@
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 130px;
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
