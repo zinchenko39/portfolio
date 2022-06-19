@@ -12,10 +12,5 @@ window.addEventListener("DOMContentLoaded", () => {
         menu.classList.remove("active");
     });
 
-    //Scroll
-    const sidepanel = document.querySelector(".sidepanel");
-    window.addEventListener("scroll", () => {
-        console.log(window.scrollY > 500);
-    });
 
 }); //---> DOMContentLoaded

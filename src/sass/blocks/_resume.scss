@@ -1,0 +1,125 @@
+.resume {
+    padding-top: 120px;
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        color: $third-color;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+        color: $third-color;
+    }
+    &__wrapper {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 425px;
+    }
+    &__item {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        width: 400px;
+        min-height: 90px;
+        align-items: center;
+        margin-bottom: 30px;
+        &_img {
+            padding: 14px 0 0 17px;
+            @include before_circle;
+            &:before {
+                top: 29px;
+            }
+        }
+        &_subtitle {
+            color: $third-color;
+        }
+        &_text {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+        &:nth-child(1) {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: $main-color;
+                top: 34px;
+                left: 320px;
+                z-index: 2;
+                opacity: 0;
+                // animation: ball_first 3s linear infinite;
+                animation-delay: 10s;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 230px;
+                border: 1px solid $third-color;
+                top: 43px;
+                left: 325px;
+                border-radius: 5px;
+            }
+        }
+        &:nth-child(2) {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: $main-color;
+                top: 65px;
+                left: 116px;
+                z-index: 2;
+                opacity: 0;
+                // animation: ball_second 3s linear infinite;
+                animation-delay: 4s;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 120px;
+                border: 1px solid $third-color;
+                top: 75px;
+                left: 125px;
+                border-radius: 5px;
+            }
+        }
+        &:nth-child(3) {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: $main-color;
+                top: 26px;
+                left: 542px;
+                z-index: 2;
+                opacity: 0;
+                // animation: ball_third 3s linear infinite;
+                animation-delay: 8s;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 260px;
+                border: 1px solid $third-color;
+                top: 35px;
+                left: 299px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

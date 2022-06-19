@@ -20,7 +20,7 @@
     width: 60px;
     height: 2px;
     border: 2px solid $main-color;
-    margin-top: 25px;
+    margin: 17px auto 0 auto;
     border-radius: 5px
 }
 
@@ -30,3 +30,6 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
