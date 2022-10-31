@@ -1,85 +1,47 @@
 @keyframes jump {
-    from {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    to {
-        transform: translateY(0);
-    }
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes appear {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 130px;
-    }
+  from {
+    width: 0px;
+  }
+  to {
+    width: 130px;
+  }
 }
 
 @keyframes rotate360 {
-    from {
-        transform: rotateY(0);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
+  from {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
-@keyframes ball_first {
-    from {
-        top: 34px;
-        left: 320px;
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 1;
-    }
-    to {
-        top: 34px;
-        left: 550px;
-        opacity: 0.1;
-        transform: scale(1);
-    }
-}
-
-@keyframes ball_second {
- from {
-    top: 65px;
-    left: 116px;
- }
- 50% {
-    transform: scale(1.5);
+@keyframes ballZoom {
+  from {
+    scale: 1;
+    opacity: 0.5;
+  }
+  50% {
+    scale: 1.2;
     opacity: 1;
- }
- to {
-    top: 190px;
-    left: 116px;
-    opacity: 0.1;
-    transform: scale(1);
- }
-}
-
-
-@keyframes ball_third {
-    from {
-        top: 26px;
-        left: 542px;
-    }
-    50% {
-       transform: scale(1.5);
-       opacity: 1;
-    }
-    to {
-       top: 26px;
-       left: 290px;
-       opacity: 0.1;
-       transform: scale(1);
-    }
+  }
+  to {
+    scale: 1;
+    opacity: 0.5;
+  }
 }
