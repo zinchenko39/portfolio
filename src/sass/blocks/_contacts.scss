@@ -2,12 +2,11 @@
   padding: 120px 0 90px 0;
   &__subtitle {
     position: relative;
-    padding: 6px 0 6px 12px;
+    // padding: 6px 0 6px 12px;
     color: $third-color;
     @include before_circle;
     &:before {
-      top: 0;
-      left: 6px;
+      left: 20px;
     }
   }
   &__title {
@@ -22,6 +21,11 @@
     }
   }
   &__descr {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .divider {
       margin: 0;
     }
@@ -30,14 +34,17 @@
   &__social {
     color: $third-color;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* row-gap: 20px; */
+    gap: 20px;
   }
-  &__link {
-    margin-right: 25px;
-    img {
-      max-width: 30px;
-      max-height: 30px;
-    }
-  }
+  // &__link {
+  //   img {
+  //     max-width: 30px;
+  //     max-height: 30px;
+  //   }
+  // }
   &__form {
     margin-top: 30px;
     display: flex;
